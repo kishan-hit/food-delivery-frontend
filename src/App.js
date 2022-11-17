@@ -28,7 +28,6 @@ function App() {
         <Route exact path="/policy" element={<Policy/>} />
         <Route exact path="/" element={<HomeScreen/>} />
       </Routes>
-      <div>hello</div>
     </Router>
     // <div>
     // <TopBar/>

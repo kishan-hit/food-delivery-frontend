@@ -17,7 +17,7 @@ const NavBar = () => {
             <Image
               src="images/logo.png"
               alt="logo"
-              style={{ height: "50px" }}
+              style={{ height: "50px", width: "150px"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,18 +25,11 @@ const NavBar = () => {
             <Nav className="ms-auto">
               {
                 currentUser ? (
-                  // <LinkContainer to="/">
-                  //   <Nav.Link>{currentUser.name}</Nav.Link>
-                  //   <NavDropdown title={currentUser.name} id="basic-nav-dropdown">
-                  //     <LinkContainer to="/orders">
-                  //       <NavDropdown.Item>
-                  //         Order
-                  //       </NavDropdown.Item>
-                  //     </LinkContainer>
-                  //     <NavDropdown.Item onClick={() => {dispatch(logoutUser())}}>Logout</NavDropdown.Item>
-                  //   </NavDropdown>
-                  // </LinkContainer>
-                  <div>h</div>
+                  <LinkContainer to="/">
+                    <Nav.Link>{currentUser.name}</Nav.Link>
+                    
+                  </LinkContainer>
+                  
                 ) : (
                   <>
                     {" "}
@@ -47,8 +40,7 @@ const NavBar = () => {
                       <Nav.Link>Register</Nav.Link>
                     </LinkContainer>{" "}
                   </>
-                )
-              }
+                )}
               <LinkContainer to="/cart">
                 <Nav.Link>Cart</Nav.Link>
               </LinkContainer>
