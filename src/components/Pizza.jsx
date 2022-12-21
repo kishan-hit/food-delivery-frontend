@@ -15,6 +15,7 @@ const Pizza = ({ pizza }) => {
   const handleShow = () => setShow(true);
   const addToCartHandler = (pizza) => {
     dispatch(addToCart(pizza,quantity,varient))
+    alert("Item successfull added to cart")
   }
   return (
     <>

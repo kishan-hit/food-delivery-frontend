@@ -31,3 +31,7 @@ export const deleteFromCart = (pizza) => (dispatch,getState) => {
     const cartItems = getState().cartReducer.cartitems;
     localStorage.setItem("cartItems",JSON.stringify(cartItems));
 };
+
+export const orderPlaced = () => (dispatch) => {
+    window.location.href = "/cart";
+};

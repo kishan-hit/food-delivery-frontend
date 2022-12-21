@@ -1,0 +1,99 @@
+.input-div{
+    width: 70%;
+    height: 2.2rem;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 3px grey;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+.form-inner-div{
+    width: 100%;
+    margin : 20px 20px;
+    display: flex;
+}
+.span-div{
+    width: 20%;
+}
+.add-btn{
+    width: 80px;
+    height: 30px;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+.add-btn-outer{
+    display: flex;
+    justify-content: center;
+}
+.add-btn:hover{
+    cursor: pointer;
+}
+img{
+    max-height: -webkit-fill-available;
+}
+/* .restaurantCard{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+} */
+.orderbutton{
+    width: 7%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderbutton>span{
+    margin: auto;
+}
+.orderbutton:hover{
+    cursor: pointer;
+}
+.cards{
+    margin: 40px 20px 40px 20px;
+    border: 10px solid brown;
+    height: 250px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    /* align-items: center;
+    justify-content: center; */
+}
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+.restaurant-info{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+}
+.card-components{
+    border: 2px solid black;
+    text-align: center;
+}
+.card-components:first-child{
+    background-color: aqua;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card-components:last-child{
+    background-color: gray;
+    margin-top: 10px;
+}

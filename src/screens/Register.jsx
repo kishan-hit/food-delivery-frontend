@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 import Loader from "../components/Loader";
 import Success from "../components/Success";
 import Error from "../components/Error";
+import {Navigate} from "react-router-dom"
 
 const Register = () => {
     const [name,setName] = useState("");
@@ -15,7 +16,7 @@ const Register = () => {
 
     const registerState = useSelector(state => state.registerUserReducer)
     const {error,success,loading} = registerState
-
+ 
     const dispatch = useDispatch()
 
     const registerhandler = () =>{

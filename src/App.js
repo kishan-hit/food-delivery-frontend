@@ -12,21 +12,36 @@ import CartScreen from './screens/CartScreen';
 import Register from './screens/Register';
 import Login from './screens/Login';
 import OrderScreen from './screens/OrderScreen';
+import AddRestaurant from './components/AddRestaurant';
+import Main from './components/Main';
+import SignUp from './components/SignUp';
+import NewLogin from './components/Login';
+import EmailVerify from './components/EmailVerify';
+import  Restaurant from './components/Restaurant';
+import RestaurantFoods from './components/RestaurantFoods';
+import AddFood from './components/AddFood';
+import Pizza from "./components/Pizza.jsx"
 
 function App() {
   return (
-    <Router>
+    <Router> 
     <TopBar/>
     <NavBar/>
       <Routes>
         <Route exact path="/orders" element={<OrderScreen/>} />
         <Route exact path="/about" element={<About/>} />
-        <Route exact path="/register" element={<Register/>} />
-        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/register" element={<SignUp/>} />
+        <Route exact path="/login" element={<NewLogin/>} />
+        <Route path='/users/:id/verify/:token' element={<EmailVerify/>} />
         <Route exact path="/cart" element={<CartScreen/>} />
         <Route exact path="/contact" element={<Contact/>} />
         <Route exact path="/policy" element={<Policy/>} />
-        <Route exact path="/" element={<HomeScreen/>} />
+        <Route exact path="/add-restaurant" element={<AddRestaurant/>} />
+        <Route exact path="/" element={<Restaurant/>} />
+        <Route exact path="restaurant/:id" element={<RestaurantFoods/>}/>
+        <Route exact path="/add-food" element={<AddFood/>} />
+        <Route exact path="/pizza" element={<Pizza/>} />
+
       </Routes>
     </Router>
     // <div>
